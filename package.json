@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "slint": "npx stylelint components",
     "write": "prettier --write .",
     "typeslint": "tsc --noemit"
   },
@@ -24,8 +25,11 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxtjs/stylelint-module": "^5.2.0",
     "@primevue/nuxt-module": "^4.2.5",
     "prettier": "3.4.2",
-    "sass": "^1.83.0"
+    "sass": "^1.83.0",
+    "stylelint": "^16.12.0",
+    "stylelint-config-standard": "^36.0.1"
   }
 }
