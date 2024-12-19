@@ -8,5 +8,5 @@
 <script setup lang="ts"></script>
 
 <style lang="scss">
-@import 'components/index';
+@use 'components/index';
 </style>

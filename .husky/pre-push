@@ -1,0 +1,5 @@
+npm run check
+npm run lint
+npm run typeslint
+npm run slint
+npm run build

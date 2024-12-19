@@ -11,8 +11,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "slint": "npx stylelint components",
+    "check": "prettier --check .",
     "write": "prettier --write .",
-    "typeslint": "tsc --noemit"
+    "typeslint": "tsc --noemit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.7.3",
@@ -27,6 +29,7 @@
   "devDependencies": {
     "@nuxtjs/stylelint-module": "^5.2.0",
     "@primevue/nuxt-module": "^4.2.5",
+    "husky": "^9.1.7",
     "prettier": "3.4.2",
     "sass": "^1.83.0",
     "stylelint": "^16.12.0",
