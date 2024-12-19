@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "write": "prettier --write ."
+    "write": "prettier --write .",
+    "typeslint": "tsc --noemit"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.7.3",
