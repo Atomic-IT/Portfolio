@@ -7,11 +7,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.7.3",
     "@nuxt/fonts": "^0.10.3",
     "@primevue/themes": "^4.2.5",
+    "eslint": "^9.17.0",
     "nuxt": "^3.14.1592",
     "primevue": "^4.2.5",
     "vue": "latest",
