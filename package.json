@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "write": "prettier --write ."
   },
   "dependencies": {
     "@nuxt/eslint": "^0.7.3",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@primevue/nuxt-module": "^4.2.5",
+    "prettier": "3.4.2",
     "sass": "^1.83.0"
   }
 }
