@@ -3,7 +3,7 @@ on: push
 
 jobs:
   deploy:
-    name: 'Deploy to NuxtHub'
+    name: "Deploy to NuxtHub"
     runs-on: ubuntu-latest
     environment:
       name: ${{ github.ref == 'refs/heads/prod' && 'production' || 'preview' }}
@@ -34,4 +34,4 @@ jobs:
         uses: nuxt-hub/action@v1
         id: deploy
         with:
-          project-key: nuxt-starter-kv6w
+          project-key: portfolio-um8p
