@@ -54,7 +54,8 @@ export default defineNuxtConfig({
   htmlValidator: {
     options: {
       rules: {
-        'element-case': 'off'
+        'element-case': 'off',
+        'prefer-native-element': 'off'
       }
     }
   },
