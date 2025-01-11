@@ -20,6 +20,7 @@
     "typeslint": "tsc --noemit"
   },
   "dependencies": {
+    "@nuxt/image": "1.9.0",
     "@nuxthub/core": "0.8.10",
     "@nuxtjs/robots": "5.1.0",
     "@nuxtjs/sitemap": "7.0.1",
