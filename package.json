@@ -25,6 +25,7 @@
     "@nuxtjs/robots": "5.1.0",
     "@nuxtjs/sitemap": "7.0.1",
     "@primevue/themes": "4.2.5",
+    "chart.js": "4.4.7",
     "nuxt": "3.14.1592",
     "nuxt-og-image": "4.0.2",
     "nuxt-schema-org": "4.0.4",
