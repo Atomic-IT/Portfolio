@@ -11,6 +11,7 @@
         <video
           id="black-hole-video"
           src="/black-hole.webm"
+          playsinline
           autoplay
           loop
           muted
