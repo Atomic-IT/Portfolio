@@ -1,0 +1,14 @@
+.p-selectbutton {
+  .p-togglebutton {
+    background: #00000060 !important;
+    border-color: var(--primary-border-color) !important;
+    color: #ffffff90;
+    padding: 0.35em 0.75em;
+    font-size: 0.7em;
+
+    &-checked {
+      background: #1d2a2f99 !important;
+      color: #fff !important;
+    }
+  }
+}

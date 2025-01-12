@@ -1,0 +1,15 @@
+.p-card {
+  padding: 0.5em;
+  background: var(--primary-card-bg-color) !important;
+  border: 1px solid var(--primary-border-color) !important;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  &-body {
+    padding: 0 !important;
+  }
+}

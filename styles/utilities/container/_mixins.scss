@@ -1,0 +1,23 @@
+@mixin container($max-width, $padding-x) {
+  width: 100%;
+  max-width: $max-width;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (width >= 360px) {
+    padding-right: calc($padding-x * 1.5);
+    padding-left: calc($padding-x * 1.5);
+  }
+
+  @media (width >= 768px) {
+    padding-right: calc($padding-x * 2);
+    padding-left: calc($padding-x * 2);
+  }
+
+  @media (width >= 992px) {
+    padding-right: calc($padding-x * 3.4);
+    padding-left: calc($padding-x * 3.4);
+  }
+}

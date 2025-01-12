@@ -1,0 +1,5 @@
+@use 'mixins' as *;
+
+.container {
+  @include container(1200px, 1em);
+}
