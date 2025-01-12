@@ -62,6 +62,16 @@ const options = [
     icon: 'pi pi-shield',
   },
 ]
+
+onMounted(() => {
+  const videoElement = document.getElementById(
+    'black-hole-video'
+  ) as HTMLVideoElement
+
+  if (videoElement) {
+    videoElement.play()
+  }
+})
 </script>
 
 <style lang="scss">
