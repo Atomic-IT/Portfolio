@@ -1,10 +1,12 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import Lara from '@primevue/themes/lara'
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
+    '@nuxt/image',
     '@nuxt/test-utils/module',
     '@nuxthub/core',
     '@nuxtjs/html-validator',
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/sitemap',
     '@nuxtjs/stylelint-module',
+    '@primevue/nuxt-module',
     'nuxt-link-checker',
     'nuxt-og-image',
     'nuxt-schema-org',
@@ -51,7 +54,17 @@ export default defineNuxtConfig({
   htmlValidator: {
     options: {
       rules: {
-        'element-case': 'off'
+        'element-case': 'off',
+        'input-missing-label': 'off',
+        'no-autoplay': 'off',
+        'prefer-native-element': 'off'
+      }
+    }
+  },
+  primevue: {
+    options: {
+      theme: {
+        preset: Lara
       }
     }
   }
