@@ -55,6 +55,8 @@ export default defineNuxtConfig({
     options: {
       rules: {
         'element-case': 'off',
+        'input-missing-label': 'off',
+        'no-autoplay': 'off',
         'prefer-native-element': 'off'
       }
     }
