@@ -5,6 +5,7 @@
   padding-left: $padding-x;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 
   @media (width >= 360px) {
     padding-right: calc($padding-x * 1.5);

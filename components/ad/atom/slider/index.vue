@@ -19,8 +19,13 @@
     :unstyled="props.unstyled"
   />
 </template>
+
 <script setup lang="ts">
 import type { SliderInterface } from '.'
 
 const props = defineProps<SliderInterface>()
 </script>
+
+<style lang="scss">
+@use 'index';
+</style>

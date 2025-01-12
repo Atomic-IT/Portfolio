@@ -1,0 +1,25 @@
+.p-chip {
+  background: var(--primary-card-bg-color) !important;
+  border: 1px solid var(--primary-border-color) !important;
+  transition: all 300ms;
+  border-radius: 6px;
+  padding: 0.35em 0.75em !important;
+  font-size: 0.7em;
+  min-width: max-content;
+  cursor: pointer;
+
+  &-icon {
+    width: unset !important;
+    height: unset !important;
+  }
+
+  &:hover {
+    background: var(--primary-bg-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+
+    .p-chip-icon {
+      color: var(--primary-color) !important;
+    }
+  }
+}

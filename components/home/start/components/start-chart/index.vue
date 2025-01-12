@@ -68,7 +68,3 @@ const setChartOptions = () => {
   }
 }
 </script>
-
-<style lang="scss">
-@use 'index';
-</style>

@@ -1,4 +1,5 @@
 export * from './button'
+export * from './chip'
 export * from './heading'
 export * from './icon'
 export * from './image'
