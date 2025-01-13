@@ -1,10 +1,10 @@
 <template>
   <section id="welcome">
     <div class="welcome-container">
-      <a href="https://github.com/Atomic-IT">
+      <ad-molecule-anchor href="https://github.com/Atomic-IT">
         <img src="/logo.png" alt="Atomic IT logo" width="150" height="150" />
-        <h1>Nuxt Starter</h1>
-      </a>
+        <ad-atom-progress-bar mode="indeterminate" width="5em" height=".9em" />
+      </ad-molecule-anchor>
     </div>
   </section>
 </template>

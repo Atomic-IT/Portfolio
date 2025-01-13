@@ -1,6 +1,13 @@
 @use 'primeicons/primeicons.css';
+@use 'keyframes';
+@use 'utilities';
+@use 'variables';
 
 * {
   box-sizing: border-box;
-  font-family: Nunito, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  margin: 0;
 }

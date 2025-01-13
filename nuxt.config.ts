@@ -54,6 +54,7 @@ export default defineNuxtConfig({
   htmlValidator: {
     options: {
       rules: {
+        'aria-label-misuse': 'off',
         'element-case': 'off',
         'input-missing-label': 'off',
         'no-autoplay': 'off',

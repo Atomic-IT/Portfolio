@@ -1,0 +1,27 @@
+.shiny-text {
+  background: linear-gradient(
+    to right,
+    #9cfee7 20%,
+    #85eed4 40%,
+    #78cbb8 60%,
+    #68b0a0 80%,
+    #afecdd 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &.first-text {
+    animation: shine 2.5s linear infinite;
+  }
+
+  &:not(.first-text) {
+    animation: shine 2s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}

@@ -7,6 +7,8 @@
   top: 0;
   left: 0;
   background: black;
+  animation: fade-out-display-none 0.75s 1.5s forwards;
+  z-index: 999;
 
   a {
     margin: 0 auto;
@@ -14,6 +16,8 @@
     flex-direction: column;
     place-content: center;
     text-decoration: none;
+    opacity: 0;
+    animation: fade-in 1s 0.5s ease-in forwards;
 
     h1 {
       color: white;
@@ -24,5 +28,22 @@
     img {
       margin: 0 auto;
     }
+
+    .p-progressbar {
+      margin: 1em auto;
+      opacity: 0;
+      animation: fade-in 1s 0.5s ease-in forwards;
+    }
+  }
+}
+
+@keyframes fade-out-display-none {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }

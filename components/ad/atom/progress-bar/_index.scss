@@ -1,0 +1,15 @@
+.p-progressbar {
+  background: var(--primary-card-bg-color) !important;
+  border: 1px solid var(--primary-border-color) !important;
+
+  &-value {
+    background: var(--primary-bg-color) !important;
+
+    &::before,
+    &::after {
+      border: 1px solid var(--primary-color) !important;
+      border-radius: 0.25em;
+      margin: 0.125em;
+    }
+  }
+}
