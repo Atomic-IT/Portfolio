@@ -41,26 +41,31 @@
         backdrop-filter: blur(1em);
 
         &-header {
-          height: 24px;
+          height: 1.5em;
 
-          .p-toggleswitch-container {
+          .p-chip,
+          .p-progressbar,
+          .p-selectbutton,
+          .p-toggleswitch-container,
+          .p-toggleswitch-container .p-toggleswitch {
             height: 100%;
-
-            .p-toggleswitch {
-              height: 100%;
-
-              &-handle {
-                transform: scale(0.8);
-              }
-            }
           }
 
           .p-chip:not(:has(.pi-microchip-ai)) {
             display: none;
           }
 
+          .p-toggleswitch-container {
+            .p-toggleswitch {
+              &-handle {
+                transform: scale(0.8);
+              }
+            }
+          }
+
           .p-progressbar {
             height: 100%;
+            width: 100%;
           }
         }
 
@@ -72,15 +77,82 @@
             width: 90%;
           }
 
-          .p-slider-container {
-            width: 10%;
+          .content {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5em;
 
-            .p-slider {
-              position: relative;
-              height: 110px;
+            .first-row {
+              display: flex;
+              width: 100%;
+
+              .right-column {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+
+                .p-slider {
+                  position: relative;
+                  height: 110px;
+                }
+              }
+            }
+
+            .second-row {
+              display: flex;
+              align-items: center;
+              padding: 0.25em;
+              gap: 0.5em;
+
+              .p-progressspinner {
+                margin: 0 !important;
+                height: 1.2em !important;
+                width: 1.2em !important;
+
+                &-circle {
+                  opacity: 0.8;
+                  stroke: var(--primary-color);
+                  animation:
+                    p-progress-spinner-dash 1.2s ease-in-out infinite,
+                    p-progress-spinner-custom-color 6s ease-in-out infinite !important;
+                }
+              }
+
+              .p-paginator {
+                background: transparent;
+                padding: 0 0.15em;
+
+                &-content {
+                  gap: 0.25em;
+                }
+
+                &-pages {
+                  gap: 0.25em;
+                }
+
+                &-first,
+                &-prev,
+                &-page,
+                &-next,
+                &-last {
+                  width: 2em;
+                  height: 2em;
+                  min-width: unset;
+                  font-size: 0.6em;
+                }
+              }
+            }
+          }
+
+          .p-select {
+            height: 2em;
+            font-size: 0.9em;
+
+            &-label {
+              padding: 0.25em;
             }
           }
         }
@@ -102,9 +174,37 @@
       .showcase-container {
         .p-card {
           &-content {
-            .p-slider-container {
+            .right-column {
               .p-slider {
                 height: 140px !important;
+              }
+            }
+
+            .content {
+              .p-progressspinner {
+                height: 2.2em;
+              }
+
+              .p-paginator {
+                padding: 0 0.25em;
+
+                &-content {
+                  gap: 0.5em;
+                }
+
+                &-pages {
+                  gap: 0.5em;
+                }
+
+                &-first,
+                &-prev,
+                &-page,
+                &-next,
+                &-last {
+                  width: 2.2em;
+                  height: 2.2em;
+                  font-size: 0.8em;
+                }
               }
             }
           }
@@ -126,8 +226,9 @@
               width: 95%;
             }
 
-            .p-slider-container {
+            .right-column {
               width: 5%;
+              gap: 1.5em;
 
               .p-slider {
                 height: 210px !important;
