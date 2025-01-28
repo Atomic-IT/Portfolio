@@ -1,0 +1,10 @@
+@keyframes p-progress-spinner-custom-color {
+  0%,
+  100% {
+    stroke: var(--primary-color);
+  }
+
+  50% {
+    stroke: var(--secondary-color);
+  }
+}
