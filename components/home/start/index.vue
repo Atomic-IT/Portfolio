@@ -11,7 +11,6 @@
         <video
           id="black-hole-video"
           src="/black-hole.webm"
-          playsinline
           autoplay
           loop
           muted
@@ -31,22 +30,7 @@
             </div>
           </template>
           <template #content>
-            <div class="content">
-              <div class="first-row">
-                <start-chart />
-                <div class="right-column">
-                  <ad-atom-slider orientation="vertical" :default-value="75" />
-                </div>
-              </div>
-              <div class="second-row">
-                <ad-atom-progress-spinner
-                  stroke-width="8"
-                  fill="transparent"
-                  animation-duration=".5s"
-                />
-                <Paginator rows="10" total-records="30" />
-              </div>
-            </div>
+            <start-chart />
           </template>
         </ad-organism-card>
       </div>

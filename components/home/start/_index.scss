@@ -69,92 +69,8 @@
           }
         }
 
-        &-content {
-          display: flex;
-          gap: 0.5em;
-
-          .start-chart {
-            width: 90%;
-          }
-
-          .content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5em;
-
-            .first-row {
-              display: flex;
-              width: 100%;
-
-              .right-column {
-                width: 10%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 1em;
-
-                .p-slider {
-                  position: relative;
-                  height: 110px;
-                }
-              }
-            }
-
-            .second-row {
-              display: flex;
-              align-items: center;
-              padding: 0.25em;
-              gap: 0.5em;
-
-              .p-progressspinner {
-                margin: 0 !important;
-                height: 1.2em !important;
-                width: 1.2em !important;
-
-                &-circle {
-                  opacity: 0.8;
-                  stroke: var(--primary-color);
-                  animation:
-                    p-progress-spinner-dash 1.2s ease-in-out infinite,
-                    p-progress-spinner-custom-color 6s ease-in-out infinite !important;
-                }
-              }
-
-              .p-paginator {
-                background: transparent;
-                padding: 0 0.15em;
-
-                &-content {
-                  gap: 0.25em;
-                }
-
-                &-pages {
-                  gap: 0.25em;
-                }
-
-                &-first,
-                &-prev,
-                &-page,
-                &-next,
-                &-last {
-                  width: 2em;
-                  height: 2em;
-                  min-width: unset;
-                  font-size: 0.6em;
-                }
-              }
-            }
-          }
-
-          .p-select {
-            height: 2em;
-            font-size: 0.9em;
-
-            &-label {
-              padding: 0.25em;
-            }
-          }
+        .start-chart {
+          width: 100%;
         }
       }
     }
@@ -170,46 +86,6 @@
           font-size: 1em;
         }
       }
-
-      .showcase-container {
-        .p-card {
-          &-content {
-            .right-column {
-              .p-slider {
-                height: 140px !important;
-              }
-            }
-
-            .content {
-              .p-progressspinner {
-                height: 2.2em;
-              }
-
-              .p-paginator {
-                padding: 0 0.25em;
-
-                &-content {
-                  gap: 0.5em;
-                }
-
-                &-pages {
-                  gap: 0.5em;
-                }
-
-                &-first,
-                &-prev,
-                &-page,
-                &-next,
-                &-last {
-                  width: 2.2em;
-                  height: 2.2em;
-                  font-size: 0.8em;
-                }
-              }
-            }
-          }
-        }
-      }
     }
 
     @media (width >= 576px) {
@@ -218,21 +94,6 @@
           &-header {
             .p-chip {
               display: flex !important;
-            }
-          }
-
-          &-content {
-            .start-chart {
-              width: 95%;
-            }
-
-            .right-column {
-              width: 5%;
-              gap: 1.5em;
-
-              .p-slider {
-                height: 210px !important;
-              }
             }
           }
         }
