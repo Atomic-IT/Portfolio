@@ -41,48 +41,36 @@
         backdrop-filter: blur(1em);
 
         &-header {
-          height: 24px;
+          height: 1.5em;
 
-          .p-toggleswitch-container {
+          .p-chip,
+          .p-progressbar,
+          .p-selectbutton,
+          .p-toggleswitch-container,
+          .p-toggleswitch-container .p-toggleswitch {
             height: 100%;
-
-            .p-toggleswitch {
-              height: 100%;
-
-              &-handle {
-                transform: scale(0.8);
-              }
-            }
           }
 
           .p-chip:not(:has(.pi-microchip-ai)) {
             display: none;
           }
 
+          .p-toggleswitch-container {
+            .p-toggleswitch {
+              &-handle {
+                transform: scale(0.8);
+              }
+            }
+          }
+
           .p-progressbar {
             height: 100%;
+            width: 100%;
           }
         }
 
-        &-content {
-          display: flex;
-          gap: 0.5em;
-
-          .start-chart {
-            width: 90%;
-          }
-
-          .p-slider-container {
-            width: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .p-slider {
-              position: relative;
-              height: 110px;
-            }
-          }
+        .start-chart {
+          width: 100%;
         }
       }
     }
@@ -98,18 +86,6 @@
           font-size: 1em;
         }
       }
-
-      .showcase-container {
-        .p-card {
-          &-content {
-            .p-slider-container {
-              .p-slider {
-                height: 140px !important;
-              }
-            }
-          }
-        }
-      }
     }
 
     @media (width >= 576px) {
@@ -118,20 +94,6 @@
           &-header {
             .p-chip {
               display: flex !important;
-            }
-          }
-
-          &-content {
-            .start-chart {
-              width: 95%;
-            }
-
-            .p-slider-container {
-              width: 5%;
-
-              .p-slider {
-                height: 210px !important;
-              }
             }
           }
         }

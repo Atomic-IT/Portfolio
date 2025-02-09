@@ -11,7 +11,6 @@
         <video
           id="black-hole-video"
           src="/black-hole.webm"
-          playsinline
           autoplay
           loop
           muted
@@ -19,11 +18,7 @@
         <ad-organism-card>
           <template #header>
             <ad-atom-select-button />
-            <ad-atom-progress-bar
-              mode="indeterminate"
-              width="100%"
-              height="1.5em"
-            />
+            <ad-atom-progress-bar mode="indeterminate" />
             <ad-atom-chip
               v-for="(item, index) in options"
               :key="index"
@@ -36,9 +31,6 @@
           </template>
           <template #content>
             <start-chart />
-            <div class="p-slider-container">
-              <ad-atom-slider orientation="vertical" :default-value="75" />
-            </div>
           </template>
         </ad-organism-card>
       </div>
